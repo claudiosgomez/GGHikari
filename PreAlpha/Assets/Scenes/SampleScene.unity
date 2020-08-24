@@ -926,17 +926,5 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1193851373}
-    - target: {fileID: 4870777957389355406, guid: bbcb830b88a6b7e48aa30cd5193c7c79, type: 3}
-      propertyPath: offset.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4870777957389355406, guid: bbcb830b88a6b7e48aa30cd5193c7c79, type: 3}
-      propertyPath: velocity.x
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4870777957389355406, guid: bbcb830b88a6b7e48aa30cd5193c7c79, type: 3}
-      propertyPath: velocity.y
-      value: 0.1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbcb830b88a6b7e48aa30cd5193c7c79, type: 3}
