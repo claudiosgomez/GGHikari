@@ -7,10 +7,12 @@ public class PlayerMovement : MonoBehaviour
     //Movement Variables
     [SerializeField] float walkspeed = 2f;
     [SerializeField] float jumpheight = 2f;
-    bool canJump;
+    bool canJump = false;
     private float jumpTimeCounter;
     [SerializeField] float jumpTime;
     private bool isJumping;
+    [SerializeField] Transform Feet;
+    public float checkRadius;
     
 
     //Player Variables
@@ -19,8 +21,10 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rigidbody2D;
     [SerializeField] float health = 5f;
 
+
     //Game Variables
     GameController gameController;
+    [SerializeField] LayerMask whatIsGround;
 
     // Start is called before the first frame update
     void Start()
@@ -35,7 +39,23 @@ public class PlayerMovement : MonoBehaviour
         Move();
         Jump();
         Die();
+        canJump = Physics2D.OverlapCircle(Feet.position, checkRadius, whatIsGround);
     }
+
+    
+
+    private  void OnCollisionEnter2D(Collision2D other)
+        {
+        if (other.transform.tag == "Ground")
+        {
+            animator.SetBool("Jump", false);
+        }
+        if (other.transform.tag == "Spike")
+        {
+            health = 0f;
+        }
+        }
+    
 
     private void Move()
     {
@@ -68,7 +88,7 @@ public class PlayerMovement : MonoBehaviour
             rigidbody2D.velocity = Vector2.up * jumpheight;
         }
 
-        if(Input.GetKey(KeyCode.Space) && isJumping == true)
+        if (Input.GetKey(KeyCode.Space) && isJumping == true)
         {
             if(jumpTimeCounter > 0)
             {
@@ -87,18 +107,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.transform.tag == "Ground")
-        {
-            animator.SetBool("Jump", false);
-            canJump = true;
-        }
-        if (other.transform.tag == "Spike")
-        {
-            health = 0f;
-        }
-    }
+
 
     private void Die()
     {

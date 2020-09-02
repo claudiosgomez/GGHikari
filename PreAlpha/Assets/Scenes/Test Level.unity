@@ -196,7 +196,7 @@ GameObject:
   - component: {fileID: 393824855}
   m_Layer: 0
   m_Name: Platforms 1 - Air
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -379,6 +379,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grass Platform 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3012127632455875305, guid: 387194816a7564544bb5f50faf13e025, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3012127632455875308, guid: 387194816a7564544bb5f50faf13e025, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.56
@@ -430,63 +434,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3012127632455875308, guid: 387194816a7564544bb5f50faf13e025, type: 3}
   m_PrefabInstance: {fileID: 679136162}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &757109771 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 419604635338882719, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
-  m_PrefabInstance: {fileID: 419604635259521097}
-  m_PrefabAsset: {fileID: 0}
---- !u!60 &757109775
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 757109771}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.96, y: 0.97333336}
-    newSize: {x: 1.44, y: 1.46}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.07333334, y: -0.48666668}
-      - {x: 0.24000001, y: -0.48666668}
-      - {x: 0.25333333, y: -0.48000002}
-      - {x: 0.26204994, y: -0.33535022}
-      - {x: 0.31948408, y: -0.2984394}
-      - {x: 0.42666668, y: -0.17785543}
-      - {x: 0.43383503, y: 0.048386753}
-      - {x: 0.48000002, y: -0.1}
-      - {x: 0.43333334, y: 0.28666666}
-      - {x: 0.34, y: 0.42000002}
-      - {x: 0.2, y: 0.48666668}
-      - {x: -0.18666667, y: 0.48666668}
-      - {x: -0.3, y: 0.44}
-      - {x: -0.37333333, y: 0.3866667}
-      - {x: -0.44, y: 0.23333333}
-      - {x: -0.41536856, y: 0.25294086}
-      - {x: -0.46153402, y: 0.13095585}
-      - {x: -0.46409988, y: -0.012165308}
-      - {x: -0.41538423, y: -0.13681506}
-      - {x: -0.35384926, y: -0.25174087}
-      - {x: -0.26000002, y: -0.30715495}
-      - {x: -0.26000002, y: -0.46}
-      - {x: -0.23333333, y: -0.48666668}
-      - {x: -0.06666667, y: -0.48666668}
-      - {x: -0.033333335, y: -0.4466667}
-      - {x: 0.046666667, y: -0.38}
-      - {x: 0.046666667, y: -0.46}
 --- !u!1001 &943606191
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -668,6 +615,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grass Platform 7
       objectReference: {fileID: 0}
+    - target: {fileID: 3012127632455875305, guid: 387194816a7564544bb5f50faf13e025, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3012127632455875308, guid: 387194816a7564544bb5f50faf13e025, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.63
@@ -762,6 +713,10 @@ PrefabInstance:
     - target: {fileID: 3012127632455875305, guid: 387194816a7564544bb5f50faf13e025, type: 3}
       propertyPath: m_Name
       value: Grass Platform 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012127632455875305, guid: 387194816a7564544bb5f50faf13e025, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3012127632455875308, guid: 387194816a7564544bb5f50faf13e025, type: 3}
       propertyPath: m_LocalPosition.x
@@ -958,7 +913,7 @@ GameObject:
   - component: {fileID: 1393530916}
   m_Layer: 0
   m_Name: Platforms 1 - Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -997,6 +952,10 @@ PrefabInstance:
     - target: {fileID: 3012127632455875305, guid: 387194816a7564544bb5f50faf13e025, type: 3}
       propertyPath: m_Name
       value: Grass Platform 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012127632455875305, guid: 387194816a7564544bb5f50faf13e025, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3012127632455875308, guid: 387194816a7564544bb5f50faf13e025, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1059,6 +1018,10 @@ PrefabInstance:
     - target: {fileID: 3012127632455875305, guid: 387194816a7564544bb5f50faf13e025, type: 3}
       propertyPath: m_Name
       value: Grass Platform 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012127632455875305, guid: 387194816a7564544bb5f50faf13e025, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3012127632455875308, guid: 387194816a7564544bb5f50faf13e025, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1179,6 +1142,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grass Platform 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3012127632455875305, guid: 387194816a7564544bb5f50faf13e025, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3012127632455875308, guid: 387194816a7564544bb5f50faf13e025, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.06
@@ -1240,6 +1207,10 @@ PrefabInstance:
     - target: {fileID: 3012127632455875305, guid: 387194816a7564544bb5f50faf13e025, type: 3}
       propertyPath: m_Name
       value: Grass Platform 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012127632455875305, guid: 387194816a7564544bb5f50faf13e025, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3012127632455875308, guid: 387194816a7564544bb5f50faf13e025, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1447,6 +1418,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grass Platform 9
       objectReference: {fileID: 0}
+    - target: {fileID: 3012127632455875305, guid: 7d803f46515bdc34ba4964608849b3d9, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3012127632455875308, guid: 7d803f46515bdc34ba4964608849b3d9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.71
@@ -1558,29 +1533,129 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 419604635338882704, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
-      propertyPath: m_Constraints
-      value: 4
+    - target: {fileID: 757109775, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.size
+      value: 28
       objectReference: {fileID: 0}
-    - target: {fileID: 419604635338882705, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
+    - target: {fileID: 757109775, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[5].x
+      value: 0.38593048
+      objectReference: {fileID: 0}
+    - target: {fileID: 757109775, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[5].y
+      value: -0.15803331
+      objectReference: {fileID: 0}
+    - target: {fileID: 757109775, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[19].x
+      value: -0.37032717
+      objectReference: {fileID: 0}
+    - target: {fileID: 757109775, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[19].y
+      value: -0.079551324
+      objectReference: {fileID: 0}
+    - target: {fileID: 757109775, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[18].x
+      value: -0.39473796
+      objectReference: {fileID: 0}
+    - target: {fileID: 757109775, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[18].y
+      value: 0.0010493994
+      objectReference: {fileID: 0}
+    - target: {fileID: 757109775, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[17].x
+      value: -0.40887094
+      objectReference: {fileID: 0}
+    - target: {fileID: 757109775, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[17].y
+      value: 0.039720297
+      objectReference: {fileID: 0}
+    - target: {fileID: 757109775, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[20].x
+      value: -0.3276318
+      objectReference: {fileID: 0}
+    - target: {fileID: 757109775, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[20].y
+      value: -0.19778067
+      objectReference: {fileID: 0}
+    - target: {fileID: 757109775, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[21].y
+      value: -0.282682
+      objectReference: {fileID: 0}
+    - target: {fileID: 757109775, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[22].x
+      value: -0.26000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 757109775, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[22].y
+      value: -0.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 757109775, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[23].x
+      value: -0.23333333
+      objectReference: {fileID: 0}
+    - target: {fileID: 757109775, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[24].x
+      value: -0.06666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 757109775, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[24].y
+      value: -0.48666668
+      objectReference: {fileID: 0}
+    - target: {fileID: 757109775, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[25].x
+      value: -0.033333335
+      objectReference: {fileID: 0}
+    - target: {fileID: 757109775, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[25].y
+      value: -0.4466667
+      objectReference: {fileID: 0}
+    - target: {fileID: 757109775, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[26].y
+      value: -0.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 757109775, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[27].x
+      value: 0.046666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 757109775, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[27].y
+      value: -0.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 757109775, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[16].x
+      value: -0.42079782
+      objectReference: {fileID: 0}
+    - target: {fileID: 757109775, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[16].y
+      value: 0.13095585
+      objectReference: {fileID: 0}
+    - target: {fileID: 757109775, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[7].y
+      value: 0.113638066
+      objectReference: {fileID: 0}
+    - target: {fileID: 757109775, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[7].x
+      value: 0.43596077
+      objectReference: {fileID: 0}
+    - target: {fileID: 757109775, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[21].x
+      value: -0.29262307
       objectReference: {fileID: 0}
     - target: {fileID: 419604635338882706, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
-      propertyPath: jumpTime
-      value: 0.2
+      propertyPath: checkRadius
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 419604635338882706, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
-      propertyPath: jumpheight
-      value: 15
+      propertyPath: whatIsGround.m_Bits
+      value: 256
       objectReference: {fileID: 0}
     - target: {fileID: 419604635338882718, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.86
+      value: -2.6
       objectReference: {fileID: 0}
     - target: {fileID: 419604635338882718, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.7
       objectReference: {fileID: 0}
     - target: {fileID: 419604635338882718, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1622,8 +1697,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 419604635338882707, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
+    - target: {fileID: 7297706253547498455, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.4872
+      objectReference: {fileID: 0}
+    - target: {fileID: 7297706253547498455, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0051
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
 --- !u!1001 &3012127631365017114
 PrefabInstance:
@@ -1635,6 +1717,10 @@ PrefabInstance:
     - target: {fileID: 3012127632455875305, guid: 387194816a7564544bb5f50faf13e025, type: 3}
       propertyPath: m_Name
       value: Grass Platform 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012127632455875305, guid: 387194816a7564544bb5f50faf13e025, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3012127632455875308, guid: 387194816a7564544bb5f50faf13e025, type: 3}
       propertyPath: m_LocalPosition.x

@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 3012127632455875308}
   - component: {fileID: 3012127632455875311}
   - component: {fileID: 3012127632455875310}
-  m_Layer: 0
-  m_Name: Grass Platform 2
+  m_Layer: 8
+  m_Name: GPlat 2
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
