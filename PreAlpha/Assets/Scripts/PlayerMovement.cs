@@ -8,6 +8,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float walkspeed = 2f;
     [SerializeField] float jumpheight = 2f;
     bool canJump;
+    private float jumpTimeCounter;
+    [SerializeField] float jumpTime;
+    private bool isJumping;
+    
 
     //Player Variables
     Animator animator;
@@ -57,9 +61,29 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKeyDown("space") && canJump)
         {
+            isJumping = true;
+            jumpTimeCounter = jumpTime;
             animator.SetBool("Jump", true);
             canJump = false;
             rigidbody2D.velocity = Vector2.up * jumpheight;
+        }
+
+        if(Input.GetKey(KeyCode.Space) && isJumping == true)
+        {
+            if(jumpTimeCounter > 0)
+            {
+                rigidbody2D.velocity = Vector2.up * jumpheight;
+                jumpTimeCounter -= Time.deltaTime;
+            }
+            else
+            {
+                isJumping = false;
+            }
+        }
+
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            isJumping = false;
         }
     }
 

@@ -1566,6 +1566,14 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 419604635338882706, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
+      propertyPath: jumpTime
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 419604635338882706, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
+      propertyPath: jumpheight
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 419604635338882718, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.86
