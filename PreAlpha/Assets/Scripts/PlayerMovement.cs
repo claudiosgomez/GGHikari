@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -42,8 +40,6 @@ public class PlayerMovement : MonoBehaviour
         canJump = Physics2D.OverlapCircle(Feet.position, checkRadius, whatIsGround);
     }
 
-    
-
     private  void OnCollisionEnter2D(Collision2D other)
         {
         if (other.transform.tag == "Ground")
@@ -53,6 +49,14 @@ public class PlayerMovement : MonoBehaviour
         if (other.transform.tag == "Spike")
         {
             health = 0f;
+        }
+        else if (other.transform.tag == "Enemy")
+        {
+            float pushForce = other.gameObject.GetComponent<Enemy>().GetForce();
+            Vector2 myTransform = new Vector2(transform.position.x, transform.position.y);
+            Vector2 dir = other.GetContact(0).point - myTransform;
+            dir = -dir.normalized;
+            rigidbody2D.AddForce(dir*pushForce);
         }
         }
     
@@ -106,8 +110,6 @@ public class PlayerMovement : MonoBehaviour
             isJumping = false;
         }
     }
-
-
 
     private void Die()
     {
