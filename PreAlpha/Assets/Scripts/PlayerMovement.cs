@@ -53,10 +53,12 @@ public class PlayerMovement : MonoBehaviour
         else if (other.transform.tag == "Enemy")
         {
             float pushForce = other.gameObject.GetComponent<Enemy>().GetForce();
+            float damageReceived = other.gameObject.GetComponent<Enemy>().GetDamage();
             Vector2 myTransform = new Vector2(transform.position.x, transform.position.y);
             Vector2 dir = other.GetContact(0).point - myTransform;
             dir = -dir.normalized;
             rigidbody2D.AddForce(dir*pushForce);
+            health -= damageReceived;
         }
         }
     
