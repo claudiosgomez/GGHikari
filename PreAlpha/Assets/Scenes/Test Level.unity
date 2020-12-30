@@ -1907,6 +1907,10 @@ PrefabInstance:
       propertyPath: whatIsGround.m_Bits
       value: 256
       objectReference: {fileID: 0}
+    - target: {fileID: 419604635338882706, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
+      propertyPath: health
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 419604635338882718, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.6
@@ -2018,7 +2022,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2268774669361889025, guid: 045a9e671c1edb243b15abe10665faa7, type: 3}
       propertyPath: damage
-      value: 4
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2268774669361889025, guid: 045a9e671c1edb243b15abe10665faa7, type: 3}
+      propertyPath: pushForce
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 2268774669361889037, guid: 045a9e671c1edb243b15abe10665faa7, type: 3}
       propertyPath: m_Name
