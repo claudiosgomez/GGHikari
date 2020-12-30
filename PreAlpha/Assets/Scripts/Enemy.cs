@@ -15,4 +15,9 @@ public class Enemy : MonoBehaviour
     {
         return damage;
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("I See you " + collision.name.ToString());
+    }
 }
