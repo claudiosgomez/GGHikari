@@ -1063,30 +1063,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3012127632455875308, guid: 387194816a7564544bb5f50faf13e025, type: 3}
   m_PrefabInstance: {fileID: 3012127631365017114}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1141483610 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2268774669361889037, guid: 045a9e671c1edb243b15abe10665faa7, type: 3}
-  m_PrefabInstance: {fileID: 2268774669726617736}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1141483615
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1141483610}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: caee4740edd20b344a78d4fb192be248, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1173348150
 GameObject:
   m_ObjectHideFlags: 0
@@ -1945,11 +1921,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 419604635338882718, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.6
+      value: -2.85
       objectReference: {fileID: 0}
     - target: {fileID: 419604635338882718, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.69
+      value: 2.34
       objectReference: {fileID: 0}
     - target: {fileID: 419604635338882718, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1990,6 +1966,10 @@ PrefabInstance:
     - target: {fileID: 419604635338882719, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 9147738289687760080, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
+      propertyPath: StartTimeBetweenAttack
+      value: 0.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}

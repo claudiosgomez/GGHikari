@@ -37,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
         Move();
         Jump();
         Die();
+        Attack();
         canJump = Physics2D.OverlapCircle(Feet.position, checkRadius, whatIsGround);
     }
 
@@ -111,6 +112,15 @@ public class PlayerMovement : MonoBehaviour
         {
             isJumping = false;
         }
+    }
+
+    private void Attack()
+    {
+        /*if (Input.GetKeyDown("left ctrl"))
+        {
+            animator.Play("Attack");
+            Debug.Log("Attack!");
+        }*/
     }
 
     private void Die()
