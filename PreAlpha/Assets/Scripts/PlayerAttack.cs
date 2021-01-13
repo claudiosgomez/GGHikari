@@ -6,13 +6,13 @@ public class PlayerAttack : MonoBehaviour
 {
 
     private float timeBetweenAttack;
-    [SerializeField] float StartTimeBetweenAttack;
+    [SerializeField] float StartTimeBetweenAttack = 1f;
     Animator animator;
 
-    [SerializeField] Transform attackPosition;
-    [SerializeField] LayerMask whatIsEnemy;
-    [SerializeField] float attackRange;
-    [SerializeField] float damage;
+    [SerializeField] public Transform attackPosition;
+    [SerializeField] public LayerMask whatIsEnemy;
+    [SerializeField] float attackRange = 5f;
+    [SerializeField] float damage = 10f;
 
     private void Start()
     {

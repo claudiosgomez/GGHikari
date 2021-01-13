@@ -6,10 +6,10 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     //Enemy Variables
-    Rigidbody2D rigidbody2D;
+    new Rigidbody2D rigidbody2D;
 
     //Player variables
-    [SerializeField] Transform player;
+    [SerializeField] public Transform player;
 
     //Attack variables
     [SerializeField] float health = 20;
@@ -17,8 +17,8 @@ public class Enemy : MonoBehaviour
     [SerializeField] float pushForce = 1;
 
     //Receive damage variables
-    [SerializeField] float agroRange;
-    [SerializeField] float moveSpeed;
+    [SerializeField] float agroRange = 2f;
+    [SerializeField] float moveSpeed = 5f;
 
     private void Start()
     {

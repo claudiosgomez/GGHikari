@@ -6,23 +6,23 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float walkspeed = 2f;
     [SerializeField] float jumpheight = 2f;
     bool canJump = false;
-    private float jumpTimeCounter;
-    [SerializeField] float jumpTime;
+    private float jumpTimeCounter = 0.3f;
+    [SerializeField] float jumpTime = 1f;
     private bool isJumping;
-    [SerializeField] Transform Feet;
-    public float checkRadius;
+    [SerializeField] public Transform Feet;
+    public float checkRadius = 5f;
     
 
-    //Player Variables
+    //Player Variables 
     Animator animator;
     SpriteRenderer spriteRenderer;
-    Rigidbody2D rigidbody2D;
+    private new Rigidbody2D rigidbody2D;
     [SerializeField] float health = 5f;
 
 
     //Game Variables
     GameController gameController;
-    [SerializeField] LayerMask whatIsGround;
+    [SerializeField] public LayerMask whatIsGround;
 
     // Start is called before the first frame update
     void Start()
@@ -37,7 +37,6 @@ public class PlayerMovement : MonoBehaviour
         Move();
         Jump();
         Die();
-        Attack();
         canJump = Physics2D.OverlapCircle(Feet.position, checkRadius, whatIsGround);
     }
 
@@ -112,15 +111,6 @@ public class PlayerMovement : MonoBehaviour
         {
             isJumping = false;
         }
-    }
-
-    private void Attack()
-    {
-        /*if (Input.GetKeyDown("left ctrl"))
-        {
-            animator.Play("Attack");
-            Debug.Log("Attack!");
-        }*/
     }
 
     private void Die()
