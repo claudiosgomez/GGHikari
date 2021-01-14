@@ -7,6 +7,8 @@ public class Enemy : MonoBehaviour
 {
     //Enemy Variables
     new Rigidbody2D rigidbody2D;
+    Animator animator;
+    SpriteRenderer spriteRenderer;
 
     //Player variables
     [SerializeField] public Transform player;
@@ -23,6 +25,8 @@ public class Enemy : MonoBehaviour
     private void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
+        animator = gameObject.GetComponent<Animator>();
+        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
     }
 
     public float GetForce()
@@ -38,27 +42,23 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(float playerDamage)
     {
         health -= playerDamage;
-        Debug.Log("Damaged!");
     }
 
     private void Update()
     {
         //Distance to player
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
-        Debug.Log(distanceToPlayer.ToString());
 
         //Check if it is within the agro area
         if (distanceToPlayer <= agroRange)
         {
             //Chase player
             ChasePlayer();
-            Debug.Log("Chase");
         }
         else
         {
             //Stop chasing player
             StopChasingPlayer();
-            Debug.Log("Stop!");
         }
 
 
@@ -71,22 +71,24 @@ public class Enemy : MonoBehaviour
 
     private void StopChasingPlayer()
     {
+        animator.SetBool("Run", false);
         rigidbody2D.velocity = new Vector2(0, 0);
     }
 
     private void ChasePlayer()
     {
+        animator.SetBool("Run", true);
         if (transform.position.x < player.position.x)
         {
             //enemy is to the left side to the player, so move right
+            spriteRenderer.flipX = false;
             rigidbody2D.velocity = new Vector2(moveSpeed, rigidbody2D.velocity.y);
-            Debug.Log("To the right!");
         }
         else
         {
             //enemy is to the right side to the player, so move left
+            spriteRenderer.flipX = true;
             rigidbody2D.velocity = new Vector2(-moveSpeed, rigidbody2D.velocity.y);
-            Debug.Log("To the left!");
         }
     }
 
