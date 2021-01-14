@@ -251,7 +251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9edc8ef74c11e5e4fa16227e58686f92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartTimeBetweenAttack: 0.3
+  StartTimeBetweenAttack: 0.4
   attackPosition: {fileID: 1435115999}
   whatIsEnemy:
     serializedVersion: 2
