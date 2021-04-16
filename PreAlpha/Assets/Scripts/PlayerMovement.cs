@@ -65,21 +65,21 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move()
     {
-        if (!Input.GetKey("right") && !Input.GetKey("left") || (Input.GetKey("right") && Input.GetKey("left")))
-        {
-            animator.SetBool("Run", false);
-        }
-        else if (Input.GetKey("left"))
+        if (Input.GetKey("left") || Input.GetKey(KeyCode.A))
         {
             spriteRenderer.flipX = true;
             if (!animator.GetBool("Jump")) { animator.SetBool("Run", true); }
             transform.Translate(Vector2.left * walkspeed * Time.deltaTime);
         }
-        else if (Input.GetKey("right"))
+        else if (Input.GetKey("right") || Input.GetKey(KeyCode.D))
         {
             spriteRenderer.flipX = false;
             if (!animator.GetBool("Jump")) { animator.SetBool("Run", true); }
             transform.Translate(Vector2.right * walkspeed * Time.deltaTime);
+        }
+        else if (!Input.GetKey("right") && !Input.GetKey("left"))
+        {
+            animator.SetBool("Run", false);
         }
     }
 
