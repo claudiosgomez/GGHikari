@@ -25,10 +25,10 @@ public class PlayerAttack : MonoBehaviour
         
             if (Input.GetKeyDown("left ctrl"))
             {
-            Debug.Log("Left ctrl");
+            
             if (timeBetweenAttack <= 0)
             {
-                Debug.Log("Time");
+                
                 animator.Play("Attack");
                 Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPosition.position, attackRange, whatIsEnemy);
 
