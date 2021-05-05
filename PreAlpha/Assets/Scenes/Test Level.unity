@@ -2390,6 +2390,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1435115999, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 419604635338882718, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.85
@@ -2437,6 +2441,14 @@ PrefabInstance:
     - target: {fileID: 419604635338882719, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 9147738289687760080, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
+      propertyPath: SlashAttack
+      value: 
+      objectReference: {fileID: 4041826123271622804, guid: f37e4257a60369a4e947c71dd4e0c49b, type: 3}
+    - target: {fileID: 9147738289687760080, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
+      propertyPath: attackRange
+      value: 0.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f804fb8f7826dd41b256bcc887bbd23, type: 3}
