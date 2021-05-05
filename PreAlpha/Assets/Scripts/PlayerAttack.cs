@@ -59,7 +59,6 @@ public class PlayerAttack : MonoBehaviour
 
     public void SlashAnimation()
     {
-        Debug.Log(playerSprite.flipX.ToString());
         if (playerSprite.flipX)
         {
             mySlashAttack = (GameObject)Instantiate(SlashAttack, new Vector3(attackPosition.transform.position.x - 1.206f, attackPosition.transform.position.y, attackPosition.transform.position.z), Quaternion.Euler(new Vector3(0, 180, 0)));
@@ -69,6 +68,6 @@ public class PlayerAttack : MonoBehaviour
             mySlashAttack = (GameObject)Instantiate(SlashAttack, new Vector3(attackPosition.transform.position.x, attackPosition.transform.position.y, attackPosition.transform.position.z), Quaternion.Euler(new Vector3(0, 0, 0)));
         }
         
-        Destroy(mySlashAttack, 0.2f);
+        Destroy(mySlashAttack, 0.1f);
     }
 }

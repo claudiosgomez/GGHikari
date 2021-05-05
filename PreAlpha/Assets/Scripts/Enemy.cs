@@ -41,7 +41,16 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(float playerDamage)
     {
+        animator.SetTrigger("IsHit");
         health -= playerDamage;
+
+        StopChasingPlayer();
+        Vector2 myTransform = new Vector2(transform.position.x, transform.position.y);
+        Vector2 dir = new Vector2(player.position.x,player.position.y) - myTransform;
+        dir = -dir.normalized;
+        rigidbody2D.AddForce(dir * 1000f);
+        
+
     }
 
     private void Update()
